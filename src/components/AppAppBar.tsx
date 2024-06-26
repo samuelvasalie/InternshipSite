@@ -100,11 +100,11 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
               />
               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <MenuItem
-                  onClick={() => scrollToSection('features')}
+                  onClick={() => scrollToSection('pricing')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                    Progetti
+                    Percorso
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -116,19 +116,19 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
+                  onClick={() => scrollToSection('features')}
+                  sx={{ py: '6px', px: '12px' }}
+                >
+                  <Typography variant="body2" color="text.primary">
+                    Progetti
+                  </Typography>
+                </MenuItem>
+                <MenuItem
                   onClick={() => scrollToSection('highlights')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
                     Skills
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection('pricing')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary">
-                    Percorso
                   </Typography>
                 </MenuItem>
                 <MenuItem
@@ -199,18 +199,19 @@ function AppAppBar({ mode, toggleColorMode }: AppAppBarProps) {
                   >
                     <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
                   </Box>
-                  <MenuItem onClick={() => scrollToSection('features')}>
-                    Progetti
+                  <MenuItem onClick={() => scrollToSection('pricing')}>
+                    Percorso
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection('testimonials')}>
                     Linguaggi
                   </MenuItem>
+                  <MenuItem onClick={() => scrollToSection('features')}>
+                    Progetti
+                  </MenuItem>
                   <MenuItem onClick={() => scrollToSection('highlights')}>
                     Skills
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('pricing')}>
-                    Percorso
-                  </MenuItem>
+
                   <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
                   <Divider />
                   <MenuItem>

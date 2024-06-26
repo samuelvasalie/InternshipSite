@@ -40,13 +40,13 @@ const items = [
     icon: <AutoFixHighRoundedIcon />,
     title: 'Adaptability',
     description:
-      "Ha ottenuto la capacità di adattarsi rapidamente a nuovi strumenti, tecnologie e ambienti di lavoro, consentendo un apprendimento efficiente e l'applicazione di nuove competenze in un ambiente professionale.",
+      "Ho ottenuto la capacità di adattarsi rapidamente a nuovi strumenti, tecnologie e ambienti di lavoro, consentendo un apprendimento efficiente e l'applicazione di nuove competenze in un ambiente professionale.",
   },
   {
     icon: <QueryStatsRoundedIcon />,
     title: 'Attention to Detail',
     description:
-      'Ha sviluppato un occhio attento ai dettagli, in particolare nel debug del codice e assicurando che tutte le convalide dei moduli e i processi di gestione dei dati fossero implementati con precisione.',
+      'Ho sviluppato un occhio attento ai dettagli, in particolare nel debug del codice e assicurando che tutte le convalide dei moduli e i processi di gestione dei dati fossero implementati con precisione.',
   },
 ];
 

@@ -6,10 +6,10 @@ import Divider from '@mui/material/Divider';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from './components/AppAppBar';
 import Hero from './components/Hero';
-import Highlights from './components/Skills';
-import Pricing from './components/Path';
-import Features from './components/Projects';
-import Testimonials from './components/Languages';
+import Skills from './components/Skills';
+import Path from './components/Path';
+import Projects from './components/Projects';
+import Languages from './components/Languages';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import getLPTheme from './components/getLPTheme';
@@ -33,13 +33,13 @@ function App() {
         <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
         <Hero />
         <Box sx={{ bgcolor: 'background.default' }}>
-          <Features />
+          <Path />
           <Divider />
-          <Testimonials />
+          <Languages />
           <Divider />
-          <Highlights />
+          <Projects />
           <Divider />
-          <Pricing />
+          <Skills />
           <Divider />
           <FAQ />
           <Divider />
