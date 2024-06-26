@@ -60,7 +60,7 @@ export default function FAQ() {
               gutterBottom
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
-              L'azienda si trova in zona via Alberto 3 Terni
+              L'azienda si trova in zona via Vittorio Alfieri 3 Terni
             </Typography>
           </AccordionDetails>
         </Accordion>
