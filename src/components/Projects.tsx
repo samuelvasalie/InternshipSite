@@ -16,25 +16,25 @@ const items = [
     icon: <ViewQuiltRoundedIcon />,
     title: 'Php',
     description:
-      'This item could provide a snapshot of the most important metrics or data points related to the product.',
-    imageLight: 'url("https://www.euromediaitalia.com/wp-content/uploads/2021/09/logoboldProva2.png")',
-    imageDark: 'url("/static/images/templates/templates-images/dash-dark.png")',
+      "Il codice PHP riceve e gestisce i dati inviati tramite il form. Dopo la validazione, stampa le informazioni dell'utente che ha effettuato l'accesso al form, come nome e cognome.",
+    imageLight: 'url("/images/php.png")',
+    imageDark: 'url("/images/php.png")',
   },
   {
     icon: <EdgesensorHighRoundedIcon />,
     title: 'Javascript',
     description:
-      'This item could provide information about the mobile app version of the product.',
-    imageLight: 'url("/static/images/templates/templates-images/mobile-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/mobile-dark.png")',
+      "Il codice JavaScript gestisce la validazione degli input dell'utente sul lato client.Verifica che l'email sia corretta e che il campo 'matricola' contenga solo numeri. Se vengono rilevati errori, vengono mostrati messaggi di avviso appropriati per correggere gli input errati.",
+    imageLight: 'url("/images/js.png")',
+    imageDark: 'url("/images/js.png")',
   },
   {
     icon: <DevicesRoundedIcon />,
     title: 'Html',
     description:
-      'This item could let users know the product is available on all platforms, such as web, mobile, and desktop.',
-    imageLight: 'url("/static/images/templates/templates-images/devices-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/devices-dark.png")',
+      "Il codice HTML definisce un form che raccoglie le informazioni dell'utente. Dopo l'invio, se tutti i dati sono corretti, il form viene inviato al server e porta l'utente a una pagina PHP che mostra il nome e il cognome della persona.",
+    imageLight: 'url("/images/html.png")',
+    imageDark: 'url("/images/html.png")',
   },
 ];
 
@@ -60,8 +60,10 @@ export default function Features() {
               color="text.secondary"
               sx={{ mb: { xs: 2, sm: 4 } }}
             >
-              Qui puoi elencare un piccolo panorama di qualche progetto che hai svolto,
-              ad esempio la parte in php, javascript e html. Inserisci le immagini nel riquadro
+              Questo è un esempio di uno dei compiti assegnati. <br />
+              Il compito prevedeva la creazione di un form in <strong>Html </strong>, gestione dei errori e
+              indirizzamento alla pagina php in <strong>JavaScript </strong> e stampa di alcuni dei valori
+              inseriti dal utente usando <strong>Php</strong>.
             </Typography>
           </div>
           <Grid container item gap={1} sx={{ display: { xs: 'auto', sm: 'none' } }}>
@@ -105,9 +107,13 @@ export default function Features() {
                   theme.palette.mode === 'light'
                     ? items[selectedItemIndex].imageLight
                     : items[selectedItemIndex].imageDark,
-                backgroundSize: 'cover',
+                backgroundSize: 'cover',  // or 'contain' based on your need
                 backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
                 minHeight: 280,
+                '@media (max-width: 600px)': {
+                  backgroundSize: 'contain',  // Adjust for phone screen size
+                },
               }}
             />
             <Box sx={{ px: 2, pb: 2 }}>
@@ -217,11 +223,18 @@ export default function Features() {
                 m: 'auto',
                 width: 420,
                 height: 500,
-                backgroundSize: 'contain',
+                backgroundSize: 'contain',  // or 'cover' based on your need
                 backgroundImage: (theme) =>
                   theme.palette.mode === 'light'
                     ? items[selectedItemIndex].imageLight
                     : items[selectedItemIndex].imageDark,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                '@media (max-width: 600px)': {
+                  width: '100%',
+                  height: 'auto',
+                  backgroundSize: 'contain',  // Adjust for phone screen size
+                },
               }}
             />
           </Card>

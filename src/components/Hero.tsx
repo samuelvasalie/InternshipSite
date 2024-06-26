@@ -4,6 +4,7 @@ import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
+
 export default function Hero() {
   return (
     <Box
@@ -109,31 +110,31 @@ export default function Hero() {
           >
             <br />
             <br />
-            Introduction:
-            During the academic year [Year], I undertook a PCTO (Periodo di Consolidamento delle Competenze) internship at Euromedia S.R.L, located at Via Vittorio Alfieri 3, Terni. The internship lasted for two weeks and was an essential part of my educational curriculum.
+            <strong>Introduction: </strong>
+            During the academic year 2024, I undertook a PCTO internship at Euromedia S.R.L, located at Via Vittorio Alfieri 3, Terni. The internship lasted for two weeks and was an essential part of my educational curriculum.
             <br />
             <br />
-            Objectives:
+            <strong>Objectives: </strong>
             The primary objective of this internship was to gain practical experience in web development, further develop my professional skills, and apply theoretical knowledge learned in the classroom to real-world scenarios. Additionally, I aimed to understand the dynamics of a professional work environment and improve my teamwork and communication skills.
             <br />
             <br />
-            Tasks and Responsibilities:
+            <strong>Tasks and Responsibilities: </strong>
             Throughout the internship, I was involved in various tasks. In the first week, I learned AJAX and JavaScript, understanding how AJAX allows updating a web page without reloading it. I added a field to track user courses and time spent on each course using an array. I also studied client-side and server-side languages, focusing on JavaScript, and covered chapters 1 to 8 of an HTML guide. In the second week, I continued reading the JavaScript guide up to chapter 18 and chapter 77, then proceeded to read chapters 78 to 81. I started and completed Exercise 1, which involved creating an HTML form with various input fields and adding a JavaScript function for validation. I re-did the exercise using different methods such as alert(), addEventListener, and innerHTML to display data. I also sent data to a PHP page using the $_POST['variableName'] method and loaded data into a MySQL database using phpMyAdmin and XAMPP after creating the database with SQL.
             <br />
             <br />
-            Skills Acquired:
+            <strong>Skills Acquired: </strong>
             During my internship, I developed several key skills, including enhanced proficiency in HTML, JavaScript, AJAX, and PHP. I learned to create and manage databases using MySQL and phpMyAdmin. Additionally, I improved my ability to effectively communicate with colleagues and supervisors, analyze problems, debug code, propose effective solutions, and collaborate with colleagues to contribute to team goals.
             <br />
             <br />
-            Challenges Faced:
+            <strong>Challenges Faced: </strong>
             One of the main challenges I encountered was adapting to new web development tools and techniques, such as AJAX and database management. However, through perseverance and guidance from my mentor, I was able to overcome these challenges and achieve successful outcomes.
             <br />
             <br />
-            Achievements:
+            <strong>Achievements: </strong>
             I successfully created functional web forms with comprehensive validation, integrated them with PHP for backend processing, and managed data storage in a MySQL database. These achievements demonstrated my capabilities and added value to the organization.
             <br />
             <br />
-            Conclusion:
+            <strong>Conclusion: </strong>
             In conclusion, my PCTO internship at Euromedia S.R.L was an invaluable experience that significantly contributed to my personal and professional development. It provided me with practical insights into web development, enhanced my skills, and confirmed my career aspirations in this field. I am grateful for the opportunity and look forward to applying what I have learned in future endeavors.
           </Typography>
         </Box>

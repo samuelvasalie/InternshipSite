@@ -54,10 +54,7 @@ export default function Pricing() {
           Percorso stage
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Quickly build an effective pricing table for your potential customers with
-          this layout. <br />
-          It&apos;s built with default Material UI components with little
-          customization.
+          Il percorso che ho seguito durante lo stage è basato su 3 fasi
         </Typography>
       </Box>
       <Grid container spacing={3} alignItems="center" justifyContent="center">

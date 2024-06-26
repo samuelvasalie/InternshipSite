@@ -104,16 +104,16 @@ export default function Footer() {
             Product
           </Typography>
           <Link color="text.secondary" href="#">
-            Features
+            Progetti
           </Link>
           <Link color="text.secondary" href="#">
-            Testimonials
+            Linguaggi
           </Link>
           <Link color="text.secondary" href="#">
-            Highlights
+            Skills
           </Link>
           <Link color="text.secondary" href="#">
-            Pricing
+            Percorso
           </Link>
           <Link color="text.secondary" href="#">
             FAQs
